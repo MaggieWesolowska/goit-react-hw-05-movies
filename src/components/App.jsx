@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 
 const HomePage = lazy(() => import('../pages/HomePage'));
 
-function App() {
+const App = () => {
 	return (
 		<div style={{ padding: '40px' }}>
 			<Routes>
@@ -11,6 +11,6 @@ function App() {
 			</Routes>
 		</div>
 	);
-}
+};
 
 export default App;
