@@ -1,9 +1,9 @@
 import { useLocation } from 'react-router-dom';
 
-export default TrendingList = ({ movies }) => {
+export const TrendingList = ({ movies }) => {
 	const location = useLocation();
 	return (
-		<>
+		<div>
 			<ul>
 				{movies.map(movie => (
 					<li key={movie.id}>
@@ -15,6 +15,6 @@ export default TrendingList = ({ movies }) => {
 					</li>
 				))}
 			</ul>
-		</>
+		</div>
 	);
 };
