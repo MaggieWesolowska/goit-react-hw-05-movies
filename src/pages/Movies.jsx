@@ -1,7 +1,7 @@
 import { SearchMovie } from '../components/SearchMovie/SearchMovie';
 
-const MoviePage = () => {
+const Movies = () => {
 	return <SearchMovie />;
 };
 
-export default MoviePage;
+export default Movies;

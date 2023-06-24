@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 import { useMovieDetails } from '../utils/hooks/useMovieDetails';
 
-const MovieDetailsPage = () => {
+const MovieDetails = () => {
 	const { movieId } = useParams();
 	const { movieDetails } = useMovieDetails(movieId);
 
@@ -77,4 +77,4 @@ const MovieDetailsPage = () => {
 	);
 };
 
-export default MovieDetailsPage;
+export default MovieDetails;
