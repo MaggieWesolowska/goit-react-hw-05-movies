@@ -1,7 +1,7 @@
 import * as API from '../api/apiMoviedb';
 import { useState, useEffect } from 'react';
 
-const useSearchMovies = input => {
+export const useSearchMovies = input => {
 	const [movies, setMovies] = useState([]);
 
 	useEffect(() => {
@@ -9,5 +9,3 @@ const useSearchMovies = input => {
 	}, [input]);
 	return { movies };
 };
-
-export default useSearchMovies;

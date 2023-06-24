@@ -1,7 +1,7 @@
 import * as API from '../api/apiMoviedb';
 import { useState, useEffect } from 'react';
 
-const useMovieReviews = movieId => {
+export const useMovieReviews = movieId => {
 	const [movieReviews, setReviews] = useState([]);
 
 	useEffect(() => {
@@ -11,5 +11,3 @@ const useMovieReviews = movieId => {
 	}, [movieId]);
 	return { movieReviews };
 };
-
-export default useMovieReviews;
