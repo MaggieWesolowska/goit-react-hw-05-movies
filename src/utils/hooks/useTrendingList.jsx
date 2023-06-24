@@ -1,7 +1,7 @@
 import * as API from './api/apiMoviedb';
 import { useState, useEffect } from 'react';
 
-export const useTrendingList = () => {
+const useTrendingList = () => {
 	const [trendingMovies, setMovies] = useState([]);
 
 	useEffect(() => {
@@ -10,3 +10,5 @@ export const useTrendingList = () => {
 
 	return { trendingMovies };
 };
+
+export default useTrendingList;

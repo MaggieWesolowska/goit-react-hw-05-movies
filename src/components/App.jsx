@@ -7,7 +7,7 @@ const App = () => {
 	return (
 		<div style={{ padding: '40px' }}>
 			<Routes>
-				<Route index element={<HomePage />} />
+				<Route path="/" element={<HomePage />} />
 			</Routes>
 		</div>
 	);
