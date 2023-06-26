@@ -5,10 +5,12 @@ export const useMovieDetails = movieId => {
 	const [movieDetails, setMovieDetails] = useState([]);
 
 	useEffect(() => {
-		API.getMovieDetails(movieId).then(
-			movieDetailsReturnedFromApi =>
-				setMovieDetails(movieDetailsReturnedFromApi)
-		);
+		const movieDetails = async () => {
+			const ret = await API.getMovieDetails(movieId);
+
+			setMovieDetails(ret);
+		};
+		movieDetails();
 	}, [movieId]);
 
 	return { movieDetails };

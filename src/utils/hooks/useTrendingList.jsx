@@ -1,14 +1,17 @@
 import * as API from './api/apiMoviedb';
 import { useState, useEffect } from 'react';
 
-const useTrendingList = () => {
+export const useTrendingList = () => {
 	const [trendingMovies, setMovies] = useState([]);
 
 	useEffect(() => {
-		API.getTrending().then(ret => setMovies(ret));
+		const useTrending = async () => {
+			const ret = await API.getTrending();
+
+			setMovies(ret);
+		};
+		useTrending();
 	}, []);
 
 	return { trendingMovies };
 };
-
-export default useTrendingList;

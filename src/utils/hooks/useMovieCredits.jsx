@@ -5,9 +5,13 @@ export const useMovieCredits = movieId => {
 	const [movieCredits, setMovieCredits] = useState([]);
 
 	useEffect(() => {
-		API.getMovieCredits(movieId).then(ret =>
-			setMovieCredits(ret)
-		);
+		const movieCredits = async () => {
+			const ret = await API.getMovieCredits(movieId);
+
+			setMovieCredits(ret);
+		};
+		movieCredits();
 	}, [movieId]);
+
 	return { movieCredits };
 };

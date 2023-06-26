@@ -5,9 +5,13 @@ export const useMovieReviews = movieId => {
 	const [movieReviews, setReviews] = useState([]);
 
 	useEffect(() => {
-		API.getMoviesReviews(movieId).then(ret =>
-			setReviews(ret)
-		);
+		const movieReviews = async () => {
+			const ret = await API.getMovieReviews(movieId);
+
+			setReviews(ret);
+		};
+		movieReviews();
 	}, [movieId]);
+
 	return { movieReviews };
 };

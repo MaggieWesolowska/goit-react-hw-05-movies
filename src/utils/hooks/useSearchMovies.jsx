@@ -5,7 +5,13 @@ export const useSearchMovies = input => {
 	const [movies, setMovies] = useState([]);
 
 	useEffect(() => {
-		API.searchMovies(input).then(ret => setMovies(ret));
+		const searchMovies = async () => {
+			const ret = await API.searchMovies(input);
+
+			setMovies(ret);
+		};
+		searchMovies();
 	}, [input]);
+
 	return { movies };
 };
