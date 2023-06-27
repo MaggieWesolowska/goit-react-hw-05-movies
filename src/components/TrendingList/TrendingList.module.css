@@ -1,10 +1,10 @@
 .trending {
-	list-style-type: decimal;
-	font-size: 20px;
+	list-style-type: none;
+	text-align: center;
 }
 
 .link {
-	font-size: 20px;
+	font-size: 25px;
 	text-decoration: none;
 	color: black;
 	font-weight: 500;
