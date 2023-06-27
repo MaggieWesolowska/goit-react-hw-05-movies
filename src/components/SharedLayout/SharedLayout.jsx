@@ -5,16 +5,16 @@ import css from './SharedLayout.module.css';
 import styled from 'styled-components';
 
 const StyledLink = styled(NavLink)`
-	color: black;
+	color: white;
 	&.active {
-		color: orange;
+		color: tomato;
 	}
 `;
 
 const SharedLayout = () => {
 	return (
 		<div className="css.container">
-			<header className="css.header">
+			<header className={css.header}>
 				<nav>
 					<StyledLink className={css.link} to="/" end>
 						Home

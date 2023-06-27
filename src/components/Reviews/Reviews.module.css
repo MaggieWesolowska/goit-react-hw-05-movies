@@ -1,0 +1,14 @@
+.reviews {
+	list-style: decimal;
+}
+.reviewsHeader {
+	font-size: 35px;
+	font-weight: 700;
+	color: black;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.reviewAuthor {
+	font-size: 20px;
+	font-weight: 700;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}

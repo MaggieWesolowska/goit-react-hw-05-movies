@@ -6,6 +6,7 @@ import {
 	useNavigate,
 } from 'react-router-dom';
 import { useMovieDetails } from '../utils/hooks/useMovieDetails';
+import css from '../components/SearchMovie/SearchMovie.module.css';
 
 const MovieDetails = () => {
 	const { movieId } = useParams();
@@ -19,7 +20,10 @@ const MovieDetails = () => {
 
 	return (
 		<div>
-			<button type="button" onClick={handleGoBack}>
+			<button
+				className={css.searchBtn}
+				type="button"
+				onClick={handleGoBack}>
 				Go back
 			</button>
 			<h2>
@@ -31,7 +35,7 @@ const MovieDetails = () => {
 			</h2>
 
 			<img
-				src={`https://image.tmdb.org/t/p/w300/${movieDetails.poster_path}`}
+				src={`https://image.tmdb.org/t/p/w300${movieDetails.poster_path}`}
 				alt={movieDetails.original_title}
 			/>
 
@@ -47,7 +51,7 @@ const MovieDetails = () => {
 			<h3>Overview</h3>
 			<p>{movieDetails.overview}</p>
 
-			<h4>Genres</h4>
+			<h3>Genres</h3>
 			<p>
 				{movieDetails.genres
 					? movieDetails.genres

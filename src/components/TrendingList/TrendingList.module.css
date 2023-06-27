@@ -1,0 +1,16 @@
+.trending {
+	list-style-type: decimal;
+	font-size: 20px;
+}
+
+.link {
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+	font-weight: 500;
+	transition: color 250ms ease-in-out;
+}
+
+.link:hover {
+	color: tomato;
+}

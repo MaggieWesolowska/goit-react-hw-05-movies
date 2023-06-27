@@ -10,19 +10,22 @@ const Cast = () => {
 	return (
 		<>
 			<ul className={css.cast}>
+				Movie Cast
 				{movieCredits.map(cast => {
 					return (
-						<li key={cast.id}>
+						<li className={css.actorCard} key={cast.id}>
 							<img
-								width={150}
+								width={200}
 								src={
 									cast.profile_path
-										? `https://image.tmdb.org/t/p/w300/${cast.profile_path}`
+										? `https://image.tmdb.org/t/p/w300${cast.profile_path}`
 										: `${placeholder}`
 								}
 								alt={cast.name}></img>
-							<p>{cast.name}</p>
-							<p>Character: {cast.character}</p>
+							<p className={css.castInfo}>{cast.name}</p>
+							<p className={css.castInfo}>
+								Character: {cast.character}
+							</p>
 						</li>
 					);
 				})}

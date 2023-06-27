@@ -1,5 +1,40 @@
 .cast {
 	list-style-type: none;
 	margin: 0;
+	margin-top: 20px;
 	padding: 0;
+	font-size: 35px;
+	font-weight: 700;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.actorCard {
+	background-color: lightgrey;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin: 20px;
+	border-radius: 20px;
+	max-width: 350px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+img {
+	margin-top: 20px;
+	width: 80%;
+	height: auto;
+	box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.4);
+}
+
+.castInfo {
+	font-size: 25px;
+	font-weight: 600;
+	padding: 5px 10px;
+	margin: 0;
+	margin-bottom: 20px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 }

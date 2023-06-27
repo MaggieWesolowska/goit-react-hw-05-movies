@@ -1,0 +1,21 @@
+.search {
+	color: #6e6d70;
+	font-size: 15px;
+	border: 2px solid #6e6d70;
+	border-radius: 5px;
+	padding: 8px;
+	margin-right: 10px;
+}
+
+.searchBtn {
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 15px;
+	margin-top: 20px;
+	font-weight: 700;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	background: #6e6d70;
+	letter-spacing: 0.04em;
+}
