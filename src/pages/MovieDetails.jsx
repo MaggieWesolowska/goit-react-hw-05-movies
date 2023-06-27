@@ -39,7 +39,7 @@ const MovieDetails = () => {
 				alt={movieDetails.original_title}
 			/>
 
-			<p>
+			<h3>
 				User Score:{' '}
 				{movieDetails.vote_average
 					? Math.fround(movieDetails.vote_average * 10).toFixed(
@@ -47,7 +47,7 @@ const MovieDetails = () => {
 					  )
 					: ''}
 				%
-			</p>
+			</h3>
 			<h3>Overview</h3>
 			<p>{movieDetails.overview}</p>
 
