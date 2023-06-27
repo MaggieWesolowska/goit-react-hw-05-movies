@@ -11,8 +11,9 @@ const Reviews = () => {
 			{movieReviews?.length === 0 && (
 				<p>We don't have any reviews for this movie yet</p>
 			)}
-			<p className={css.reviewsHeader}>Reviews</p>
+
 			<ul className={css.reviews}>
+				<p className={css.reviewsHeader}>Reviews</p>
 				{movieReviews.map(review => {
 					return (
 						<li key={review.id}>
