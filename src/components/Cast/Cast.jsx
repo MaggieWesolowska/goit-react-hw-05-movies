@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useMovieCredits } from '../../utils/hooks/useMovieCredits';
-import placeholder from '../images/placeholder.jpg';
+import placeholder from '../../Assets/Images/placeholder.jpg';
 import css from './Cast.module.css';
 
 const Cast = () => {
