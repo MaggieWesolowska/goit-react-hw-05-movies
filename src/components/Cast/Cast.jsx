@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useMovieCredits } from '../../utils/hooks/useMovieCredits';
 import placeholder from '../images/placeholder.png';
+import css from './Cast.module.css';
 
 const Cast = () => {
 	const { movieId } = useParams();
@@ -8,7 +9,7 @@ const Cast = () => {
 
 	return (
 		<>
-			<ul>
+			<ul className={css.cast}>
 				{movieCredits.map(cast => {
 					return (
 						<li key={cast.id}>
