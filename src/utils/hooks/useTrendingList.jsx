@@ -1,4 +1,4 @@
-import * as API from './api/apiMoviedb';
+import * as API from '../api/apiMoviedb';
 import { useState, useEffect } from 'react';
 
 export const useTrendingList = () => {

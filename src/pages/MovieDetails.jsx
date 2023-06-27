@@ -31,7 +31,7 @@ const MovieDetails = () => {
 			</h2>
 
 			<img
-				src={`https://image.tmdb.org/t/p/w300_and_h450_bestv2${movieDetails.poster_path}`}
+				src={`https://image.tmdb.org/t/p/w300/${movieDetails.poster_path}`}
 				alt={movieDetails.original_title}
 			/>
 
