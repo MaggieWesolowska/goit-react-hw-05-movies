@@ -2,16 +2,16 @@ import * as API from '../api/apiMoviedb';
 import { useState, useEffect } from 'react';
 
 export const useSearchMovies = input => {
-	const [movies, setMovies] = useState([]);
+  const [movies, setMovies] = useState([]);
 
-	useEffect(() => {
-		const searchMovies = async () => {
-			const ret = await API.searchMovies(input);
+  useEffect(() => {
+    const searchMovies = async () => {
+      const ret = await API.searchMovies(input);
 
-			setMovies(ret);
-		};
-		searchMovies();
-	}, [input]);
+      setMovies(ret);
+    };
+    searchMovies();
+  }, [input]);
 
-	return { movies };
+  return { movies };
 };

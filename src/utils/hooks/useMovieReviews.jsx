@@ -2,16 +2,16 @@ import * as API from '../api/apiMoviedb';
 import { useState, useEffect } from 'react';
 
 export const useMovieReviews = movieId => {
-	const [movieReviews, setReviews] = useState([]);
+  const [movieReviews, setReviews] = useState([]);
 
-	useEffect(() => {
-		const movieReviews = async () => {
-			const ret = await API.getMovieReviews(movieId);
+  useEffect(() => {
+    const movieReviews = async () => {
+      const ret = await API.getMovieReviews(movieId);
 
-			setReviews(ret);
-		};
-		movieReviews();
-	}, [movieId]);
+      setReviews(ret);
+    };
+    movieReviews();
+  }, [movieId]);
 
-	return { movieReviews };
+  return { movieReviews };
 };
