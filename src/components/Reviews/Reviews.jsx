@@ -21,7 +21,9 @@ const Reviews = () => {
               <p className={css.reviewAuthor}>
                 Author: {review.author}
               </p>
-              <p>{review.content}</p>
+              <p className={css.reviewContent}>
+                {review.content}
+              </p>
             </li>
           );
         })}
