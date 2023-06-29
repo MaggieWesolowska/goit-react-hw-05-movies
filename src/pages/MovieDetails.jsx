@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import { useMovieDetails } from '../utils/hooks/useMovieDetails';
 import css from '../components/SearchMovie/SearchMovie.module.css';
+import placeholder from '../Assets/Images/placeholder.jpg';
 
 const MovieDetails = () => {
   const { movieId } = useParams();
@@ -35,7 +36,11 @@ const MovieDetails = () => {
       </h2>
 
       <img
-        src={`https://image.tmdb.org/t/p/w300${movieDetails.poster_path}`}
+        src={
+          movieDetails.poster_path
+            ? `https://image.tmdb.org/t/p/w300${movieDetails.poster_path}`
+            : `${placeholder}`
+        }
         alt={movieDetails.original_title}
       />
 
