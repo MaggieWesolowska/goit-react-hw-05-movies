@@ -13,7 +13,7 @@ const NotFound = lazy(() => import('../pages/NotFound'));
 const Cast = lazy(() => import('./Cast/Cast.jsx'));
 const Reviews = lazy(() => import('./Reviews/Reviews.jsx'));
 
-const App = () => {
+export const App = () => {
   return (
     <div
       style={{

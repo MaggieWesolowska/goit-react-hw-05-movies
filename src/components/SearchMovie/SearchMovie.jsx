@@ -1,7 +1,7 @@
 import { useSearchParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import TrendingList from '../TrendingList/TrendingList';
-import * as API from '../../utils/api/apiMoviedb';
+import * as API from '../../utils/api/apiMovieDB.jsx';
 import css from '../SearchMovie/SearchMovie.module.css';
 
 const SearchMovie = () => {
