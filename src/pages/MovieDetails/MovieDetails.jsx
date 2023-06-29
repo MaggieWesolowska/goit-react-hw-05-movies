@@ -6,7 +6,7 @@ import {
   useNavigate,
 } from 'react-router-dom';
 import { useMovieDetails } from '../../utils/hooks/useMovieDetails';
-import css from '../../components/SearchMovie/SearchMovie.module.css';
+import css from '../MovieDetails/MovieDetails.module.css';
 import placeholder from '../../Assets/Images/placeholder.jpg';
 
 const MovieDetails = () => {
@@ -22,29 +22,31 @@ const MovieDetails = () => {
   return (
     <div>
       <button
-        className={css.searchBtn}
+        className={css.backBtn}
         type='button'
         onClick={handleGoBack}>
         Back
       </button>
-      <h2>
+      <h2 className={css.movieTitle}>
         {movieDetails.title} (
         {movieDetails.release_date
           ? movieDetails.release_date.substring(0, 4)
           : ''}
         )
       </h2>
+      <div className={css.imgBox}>
+        <img
+          className={css.movieImg}
+          src={
+            movieDetails.poster_path
+              ? `https://image.tmdb.org/t/p/w300${movieDetails.poster_path}`
+              : `${placeholder}`
+          }
+          alt={movieDetails.original_title}
+        />
+      </div>
 
-      <img
-        src={
-          movieDetails.poster_path
-            ? `https://image.tmdb.org/t/p/w300${movieDetails.poster_path}`
-            : `${placeholder}`
-        }
-        alt={movieDetails.original_title}
-      />
-
-      <h3>
+      <h3 className={css.movieInfo}>
         User Score:{' '}
         {movieDetails.vote_average
           ? Math.fround(
@@ -53,11 +55,13 @@ const MovieDetails = () => {
           : ''}
         %
       </h3>
-      <h3>Overview</h3>
-      <p>{movieDetails.overview}</p>
+      <h3 className={css.movieInfo}>Overview</h3>
+      <p className={css.movieText}>
+        {movieDetails.overview}
+      </p>
 
-      <h3>Genres</h3>
-      <p>
+      <h3 className={css.movieInfo}>Genres</h3>
+      <p className={css.movieText}>
         {movieDetails.genres
           ? movieDetails.genres
               .map(genre => genre.name)
@@ -65,11 +69,14 @@ const MovieDetails = () => {
           : ''}
       </p>
 
-      <h2>Additional information</h2>
+      <h3 className={css.movieAdd}>
+        Additional information
+      </h3>
 
-      <ul>
+      <ul className={css.infoList}>
         <li>
           <Link
+            className={css.movieLink}
             to='cast'
             state={{ from: location.state.from }}>
             Cast
@@ -77,6 +84,7 @@ const MovieDetails = () => {
         </li>
         <li>
           <Link
+            className={css.movieLink}
             to='reviews'
             state={{ from: location.state.from }}>
             Reviews

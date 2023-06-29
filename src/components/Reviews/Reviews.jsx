@@ -9,8 +9,8 @@ const Reviews = () => {
   return (
     <div>
       {movieReviews?.length === 0 && (
-        <h4>
-          We don't have any reviews for this movie yet ..
+        <h4 className={css.reviewInfo}>
+          Sorry, we don't have any reviews for this movie..
         </h4>
       )}
       <p className={css.reviewsHeader}>Reviews</p>

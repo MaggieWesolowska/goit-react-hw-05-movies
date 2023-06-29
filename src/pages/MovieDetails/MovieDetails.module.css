@@ -1,0 +1,95 @@
+.backBtn {
+  width: 15vw;
+  color: orangered;
+  font-size: 1.2rem;
+  font-weight: 800;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  background: lightgrey;
+  box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.4);
+  transition: transform 250ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.movieTitle {
+  text-align: center;
+  margin: 20px 0;
+  padding: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #6e6d70;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.imgBox {
+  display: flex;
+  justify-content: center;
+  background-color: lightgrey;
+  padding: 1.5rem 0;
+  border-radius: 20px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.movieImg {
+  width: 100%;
+  height: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.7);
+}
+
+.movieInfo {
+  color: #6e6d70;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.movieAdd {
+  text-align: center;
+  color: #6e6d70;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.movieText {
+  color: #6e6d70;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: solid 2px lightgrey;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.infoList {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  margin: 50px 0;
+  padding: 0;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.movieLink {
+  text-decoration: none;
+  background-color: lightgrey;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  color: orangered;
+  font-size: 1.5rem;
+  font-weight: 700;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+  transition: 250ms ease-in-out;
+
+  &:hover {
+    color: white;
+    background-color: orangered;
+  }
+}
