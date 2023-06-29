@@ -3,13 +3,17 @@ import { Routes, Route } from 'react-router-dom';
 import SharedLayout from './SharedLayout/SharedLayout';
 
 const HomePage = lazy(() =>
-  import('../pages/HomePage.jsx')
+  import('../pages/HomePage/HomePage')
 );
 const MovieDetails = lazy(() =>
-  import('../pages/MovieDetails')
+  import('../pages/MovieDetails/MovieDetails.jsx')
 );
-const Movies = lazy(() => import('../pages/Movies'));
-const NotFound = lazy(() => import('../pages/NotFound'));
+const Movies = lazy(() =>
+  import('../pages/Movies/Movies.jsx')
+);
+const NotFound = lazy(() =>
+  import('../pages/NotFound/NotFound.jsx')
+);
 const Cast = lazy(() => import('./Cast/Cast.jsx'));
 const Reviews = lazy(() => import('./Reviews/Reviews.jsx'));
 

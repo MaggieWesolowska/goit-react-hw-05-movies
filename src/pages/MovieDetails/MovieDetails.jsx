@@ -5,9 +5,9 @@ import {
   useLocation,
   useNavigate,
 } from 'react-router-dom';
-import { useMovieDetails } from '../utils/hooks/useMovieDetails';
-import css from '../components/SearchMovie/SearchMovie.module.css';
-import placeholder from '../Assets/Images/placeholder.jpg';
+import { useMovieDetails } from '../../utils/hooks/useMovieDetails';
+import css from '../../components/SearchMovie/SearchMovie.module.css';
+import placeholder from '../../Assets/Images/placeholder.jpg';
 
 const MovieDetails = () => {
   const { movieId } = useParams();
@@ -25,7 +25,7 @@ const MovieDetails = () => {
         className={css.searchBtn}
         type='button'
         onClick={handleGoBack}>
-        Go back
+        Back
       </button>
       <h2>
         {movieDetails.title} (

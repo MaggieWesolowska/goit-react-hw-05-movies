@@ -19,6 +19,7 @@ const SharedLayout = () => {
           <StyledLink className={css.link} to='/' end>
             Home
           </StyledLink>
+
           <StyledLink className={css.link} to='/movies'>
             Movies
           </StyledLink>
