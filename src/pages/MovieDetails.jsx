@@ -65,7 +65,7 @@ const MovieDetails = () => {
           : ''}
       </p>
 
-      <p>Additional information</p>
+      <h2>Additional information</h2>
 
       <ul>
         <li>

@@ -1,11 +1,11 @@
 const NotFound = () => {
   return (
     <main style={{ textAlign: 'center' }}>
-      <p style={{ fontSize: 72 }}>404</p>
-      <p>
+      <h3 style={{ fontSize: 60 }}>404</h3>
+      <h3>
         Sorry, the movie you're looking for could not be
         found, try again!
-      </p>
+      </h3>
     </main>
   );
 };

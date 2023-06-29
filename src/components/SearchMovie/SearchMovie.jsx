@@ -25,7 +25,7 @@ const SearchMovie = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form className={css.form} onSubmit={handleSubmit}>
         <input
           className={css.search}
           type='text'

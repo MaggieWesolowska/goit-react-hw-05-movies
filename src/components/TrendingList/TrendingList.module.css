@@ -1,16 +1,19 @@
 .trending {
-	list-style-type: none;
-	text-align: center;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  padding-top: 20px;
 }
 
 .link {
-	font-size: 25px;
-	text-decoration: none;
-	color: black;
-	font-weight: 500;
-	transition: color 250ms ease-in-out;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: 250ms ease-in-out;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .link:hover {
-	color: tomato;
+  color: orangered;
 }
