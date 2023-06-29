@@ -8,6 +8,7 @@ const HomePage = () => {
     <div>
       <h3 className={css.homeHeader}>Trending Today</h3>
       <TrendingList movies={trendingMovies}></TrendingList>
+      <div className={css.homeFooter}>Made by MW 2023'</div>
     </div>
   );
 };
