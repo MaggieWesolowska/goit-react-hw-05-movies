@@ -5,12 +5,12 @@ export const useSearchMovies = input => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    const searchMovies = async () => {
+    const func = async () => {
       const ret = await API.searchMovies(input);
 
       setMovies(ret);
     };
-    searchMovies();
+    func();
   }, [input]);
 
   return { movies };
